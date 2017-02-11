@@ -1,3 +1,26 @@
 // Place all the styles related to the mainController controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    background-image: url(../images/index-bg.png);
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 40sp;
+    font-weight:  300;
+    letter-spacing: 1.2em;
+}
+
+.btn {
+    width:  200dp;
+    height: 80dp;
+    padding:  32dp;
+    background-color: coral;
+    display: block;
+    align-content: center;
+    vertical-align: middle;
+}
