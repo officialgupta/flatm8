@@ -11,4 +11,8 @@ class FlatsController < ApplicationController
 
 		@flat = Flat.new(params.require(:flat).permit(:name))
 	end
+
+	def show
+	    @flat = Flat.find(params[:id])
+	end
 end
