@@ -8,6 +8,7 @@ class FlatsController < ApplicationController
 		@flat = Flat.create(params.require(:flat).permit(:name))
 		@flat.save
 		redirect_to @flat
+		#@user.flat = :id
 	end
 
 	def show
