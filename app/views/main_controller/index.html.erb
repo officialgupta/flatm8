@@ -1,7 +1,7 @@
 <head>
-  <title>flatm8</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+  <title>
+    flatm8
+  </title>
 </head>
 
 <body>
@@ -12,16 +12,17 @@
     <h2>
       make your flat more productive
     </h2>
-    <button href="/flats/new" id="btn-create" class="btn btn-l">
+    <%= link_to "Create flat", new_flat_path, :class =>  "btn btn-l", :id => "btn-new-flat"%>
+    <!-- <a href="/flats/new" id="btn-create" class="btn btn-l">
       Create flat
-    </button>
-    <div class="row">
-      <button href="/flats/join" id="btn-join" class="btn btn-m">
-        Join flat
-      </button>
-      <button href="#" id="btn-sign-in" class="btn btn-s">
-        Sign in
-      </button>
-    </div>
+    </a> -->
+    <%= link_to "Join flat", new_flat_path, :class =>  "btn btn-m", :id => "btn-join-flat"%>
+    <!-- <a href="/flats/join" id="btn-join" class="btn btn-m">
+      Join flat
+    </a> -->
+    <%= link_to "Login", new_user_session_path, :class =>  "btn btn-s", :id => "btn-sign-in"%>
+    <!-- <a href="/users/sign_in" id="btn-sign-in" class="btn btn-s">
+      Sign in
+    </a> -->
   </div>
 </body>
