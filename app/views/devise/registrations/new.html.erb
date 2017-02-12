@@ -1,28 +1,39 @@
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+  <%= devise_error_messages!%>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.label :email, :class => 'field' %><br />
+    <%= f.email_field :email, :class => 'field_input', autofocus: true %>
   </div>
 
+  <div class="break"></div>
+
   <div class="field">
-    <%= f.label :password %>
+    <%= f.label :password, :class => 'field'%>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em class="field" id="rem">(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, :class => 'field_input', autocomplete: "off" %>
   </div>
 
+  <div class="break"></div>
+
   <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <%= f.label :password_confirmation, :class => 'field'%><br />
+    <%= f.password_field :password_confirmation,:class => 'field_input', autocomplete: "off" %>
   </div>
+
+  <div class="break"></div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", :class => 'btn', :id => 'signup'%>
+  </div>
+
+  <div class="sign_in_portal">
+    <p>Already signed up? </p>
+
   </div>
 <% end %>
 
