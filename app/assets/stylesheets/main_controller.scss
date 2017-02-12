@@ -6,6 +6,7 @@ $f-color: #ccc;
 
 // import google fonts:
 @import url('https://fonts.googleapis.com/css?family=Raleway:100|Roboto:100,400');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
 
 * {
   font-family: Roboto, sans-serif;
@@ -33,7 +34,7 @@ body {
 }
 
 h1 {
-    font-family: Raleway, sans-serif;
+    font-family: 'Lobster Two', Raleway, sans-serif;
     font-size: 48px;
     font-weight: 100;
     text-decoration: underline;
@@ -80,6 +81,7 @@ h2 {
     min-width: 10px;
     margin: 40px auto;
     text-align: center;
+    box-shadow: 0 3px 1px #666; 
 }
 
 $color-sel: #5eb1ed; // #FF7F50;
