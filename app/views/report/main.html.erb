@@ -1,2 +1,14 @@
 <h1>report#main</h1>
-<p>Find me in app/views/report/main.html.erb</p>
+
+<h4>Please raise your issue?</h4>
+
+<%= form_for :problem, url: problems_path do |f| %>
+  <p>
+     <%= f.label :issue %><br>
+     <%= f.text_field :issue %>
+  </p>
+
+   <p>
+     <%= f.submit %>
+   </p>
+ <% end %>

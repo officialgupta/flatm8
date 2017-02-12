@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :flats
 
   root 'main_controller#index'
+
+  resources :problems
   
   get 'main', to: 'report#main'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
