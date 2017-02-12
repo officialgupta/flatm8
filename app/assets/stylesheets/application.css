@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+
+}
+
+.top-bar {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #555;
+  text-align: center;
+  min-width: 300px;
+  max-width: 30%;
+  height: auto;
+  padding: 0px;
+  margin: -10px auto 0 auto;
+  text-align: center;
+}
+
+.navbar-text {
+    min-width: 300px;
+    text-align: center;
+    max-width: 30%;
+    height: auto;
+    padding: -20px;
+    margin: -45px auto 0 auto;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    color: #ccc;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #09C;
+
+}
