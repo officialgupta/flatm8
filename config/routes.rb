@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  # get 'reports/new'
+
+  resources :reports
+
+  # post 'reports/new'
+
+  get 'welcome/index'
+
   devise_for :users
   
   get 'main_controller/index'

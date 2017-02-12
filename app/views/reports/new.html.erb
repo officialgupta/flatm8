@@ -1,0 +1,12 @@
+<h1>Reports</h1>
+
+<%= form_for :report, url: reports_path do |f| %>
+  <p>
+    <%= f.label :item %><br>
+    <%= f.text_field :item %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
