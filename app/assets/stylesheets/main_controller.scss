@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$f-color: #ddd;
+$f-color: #ccc;
 
 // import google fonts:
 @import url('https://fonts.googleapis.com/css?family=Raleway:100|Roboto:100,400');
@@ -81,7 +81,7 @@ h2 {
     min-width: 10px;
     margin: 40px auto;
     text-align: center;
-    box-shadow: 0 3px 1px #666;
+    box-shadow: 0 3px 1px #666; 
 }
 
 $color-sel: #5eb1ed; // #FF7F50;
@@ -185,4 +185,8 @@ $padd-s: 16px;
 
 .link:visited {
   color:#ea5951;
+}
+
+input {
+  color: #333;
 }
