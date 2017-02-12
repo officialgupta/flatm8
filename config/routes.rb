@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'report/main'
+
   devise_for :users
   
   get 'main_controller/index'
@@ -8,5 +10,6 @@ Rails.application.routes.draw do
 
   root 'main_controller#index'
   
+  get 'main', to: 'report#main'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
