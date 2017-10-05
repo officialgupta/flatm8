@@ -1,3 +1,3 @@
-Readme is cool.
+## Readme is cool.
 
 flatm8 harmonises flatmates!
