@@ -1,14 +1,12 @@
 <h1>Create your flat <br>
   (give it a nice name!)</h1>
+  <%= form_for :flat, url: flats_path do |f| %>
+    <p>
+      <!-- <%= f.label :name %><br> -->
+      <%= f.text_field :name %>
+    </p>
 
-
-<%= form_for :flat, url: flats_path do |f| %>
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
-
-   <p>
-    <%= f.submit %>
-  </p>
+     <p>
+      <%= f.submit :class => 'btn btn-xs' %>
+    </p>
 <% end %>

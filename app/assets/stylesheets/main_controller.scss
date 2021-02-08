@@ -81,7 +81,7 @@ h2 {
     min-width: 10px;
     margin: 40px auto;
     text-align: center;
-    box-shadow: 0 3px 1px #666; 
+    box-shadow: 0 3px 1px #666;
 }
 
 $color-sel: #5eb1ed; // #FF7F50;
@@ -140,6 +140,33 @@ $padd-s: 16px;
     padding: $padd-s (2 * $padd-s);
     font-size: ($padd-s + 4px);
 }
+$padd-xs: 4px;
+.btn-xs {
+    background-color: $color1;
+    -moz-border-radius: $rad;
+    -webkit-border-radius: $rad;
+    border-radius: $rad;
+    padding: $padd-s (2 * $padd-s);
+    font-size: ($padd-s + 2px);
+}
+
+form {
+    label {
+        text-transform: uppercase;
+    }
+    input {
+        border: none;
+        border-radius: 100px;
+        padding: 16px 35px 16px 35px;
+        margin: 5px 0 0 0;
+        font-size: 24px;
+        #flat_name {
+            padding: 10px 15px 0px 15px;
+        }
+    }
+    text-align: center;
+}
+
 
 #signup {
   margin: 0px;

@@ -1,3 +1,32 @@
 // Place all the styles related to the Flats controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#welcome {
+    font-size: 32px;
+    padding-bottom: 0;
+    margin-bottom: -50px;
+    text-decoration: none;
+}
+
+h1 {
+    text-transform: none;
+    letter-spacing: .15em!important;
+}
+
+.cover {
+    background-image: url("flat-m8s.jpg");
+    margin-top: 100px;
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 5%;
+    border-radius: 300px;
+    transition: all .2s ease;
+}
+.cover:hover {
+      
+}
